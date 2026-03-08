@@ -1,0 +1,25 @@
+{
+  "name": "ftd-mlo-fixer",
+  "version": "1.0.0",
+  "description": "FTD MLO Fixer - offline duplicate YMAP conflict fixer with optional YMAP<->XML conversion pipeline",
+  "main": "src/main.js",
+  "author": "grunt / fixtechdevs",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "auth-server": "node auth-server/server.js",
+    "pack": "electron-builder --dir --config electron-builder.config.cjs",
+    "dist": "electron-builder --config electron-builder.config.cjs",
+    "release:github": "electron-builder --publish always --config electron-builder.config.cjs"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "@xmldom/xmldom": "^0.8.10",
+    "discord-rpc": "^4.0.1",
+    "electron-updater": "^6.8.3",
+    "fast-xml-parser": "^4.5.0"
+  }
+}
