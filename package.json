@@ -5,6 +5,10 @@
   "main": "src/main.js",
   "author": "grunt / fixtechdevs",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1012ilro/Dev11.git"
+  },
   "scripts": {
     "start": "electron .",
     "auth-server": "node auth-server/server.js",
